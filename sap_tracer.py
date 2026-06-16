@@ -23,7 +23,7 @@ def main() -> None:
     parser.add_argument("--cookie", type=str, help="WebUI Session Cookie 값")
     parser.add_argument("--csrf", type=str, help="WebUI X-CSRF-Token 값")
     parser.add_argument("--level", type=str, default="TRACE", choices=["NONE", "INFO", "DEBUG", "TRACE"], help="변경할 로그 레벨")
-    parser.add_argument("--interval", type=int, default=50, help="주기적 실행 간격 (분 단위, 입력 시 무한 루프 실행)")
+    parser.add_argument("--interval", type=int, default=10, help="주기적 실행 간격 (분 단위, 입력 시 무한 루프 실행)")
     
     args = parser.parse_args()
     
