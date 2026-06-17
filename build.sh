@@ -1,0 +1,1 @@
+pyinstaller sap_tracer.py --onefile --name SAP_IS_Trace_Enabler
